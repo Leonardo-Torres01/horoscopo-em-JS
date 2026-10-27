@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horóscopo</title>
+</head>
+<body style="font-family: Arial; text-align: center;">
+    <h1>Horóscopo interativo</h1>
+    <label for="signo">Escolha seu signo:</label>
+    <select id="signo">
+        <option value="">Selecione</option>
+        <option value="aries">Áries</option>
+        <option value="touro">Touro</option>
+        <option value="gemeos">Gêmeos</option>
+        <option value="cancer">Câncer</option>
+        <option value="leao">Leão</option>
+        <option value="virgem">Virgem</option>
+        <option value="libra">Libra</option>
+        <option value="escorpiao">Escorpião</option>
+        <option value="sagitario">Sagitário</option>
+        <option value="capricornio">Capricórnio</option>
+        <option value="aquario">Aquário</option>
+        <option value="peixes">Peixes</option>
+    </select>
+    <button onclick="verHoroscopo()">Ver previsão</button>
+
+    <div id="cartao" style="background-color: lightgray; padding: 20px; margin: 20px auto; max-width: 400px;">
+        <h2 id="nome">Seu horóscopo</h2>
+        <img id="imagem" src="imagens/inicio.svg" alt="Escolha um signo" width="120" height="120">
+        <p id="previsao">Escolha um signo e clique no botão!</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
